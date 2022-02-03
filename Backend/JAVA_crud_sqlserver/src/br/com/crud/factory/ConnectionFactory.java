@@ -9,26 +9,26 @@ public class ConnectionFactory {
 			// Faz com que a classe seja carregada pela JVM
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver"); 
 			
-			// Cria a conexão com o banco de dados ----------------------- SEM senha
+			// Cria a conexï¿½o com o banco de dados ----------------------- SEM senha
 			// Connection connection = DriverManager.getConnection(
 				// "jdbc:sqlserver://LAPTOP-1CT7LGRM;integratedSecurity=true;databaseName=crud;");
 			
-			// Cria a conexão com o banco de dados ----------------------- COM senha
+			// Cria a conexï¿½o com o banco de dados ----------------------- COM senha
 			// Connection connection = DriverManager.getConnection(
 					// "jdbc:sqlserver://LAPTOP-1CT7LGRM;databaseName=crud;", "usuario", "senha");
 			
-			// Cria a conexão com o banco de dados ----------------------- COM senha pelo Azure
+			// Cria a conexï¿½o com o banco de dados ----------------------- COM senha pelo Azure
 			Connection connection = DriverManager.getConnection(
-					"jdbc:sqlserver://recodecris.database.windows.net;databaseName=Bookstore;", "adminazure", "@admin123");
+					"jdbc:sqlserver://recodecris.database.windows.net;databaseName=Bookstore;", "usuario", "senha");
 			
 			return connection;
 		}
 		public static void main(String[] args) throws Exception{
-			// Recupera uma conexão com o banco de dados
+			// Recupera uma conexï¿½o com o banco de dados
 			Connection con = createConnectionSQLServer();
-			// Testa se a conexão é nula
+			// Testa se a conexï¿½o ï¿½ nula
 			if (con != null) {
-				System.out.println("Conexão obtida com sucesso! " + con);
+				System.out.println("Conexï¿½o obtida com sucesso! " + con);
 				con.close();
 			}
 		}
