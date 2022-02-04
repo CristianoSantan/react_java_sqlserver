@@ -10,7 +10,7 @@ public class LivroTeste {
 		
 		// ------------ Cria um livro e salva no banco
 		/*Livros livro = new Livros();
-		livro.setNome("Jo„o");
+		livro.setNome("Jo√£o");
 		livro.setIsbn(654);
 		livro.setPreco(59);
 		livro.setId_autor(2);
@@ -19,15 +19,15 @@ public class LivroTeste {
 		livrosDAO.save(livro);*/
 		
 		// ------------ Atualiza o contato com id = 1 com os dados do objeto contato1
-		Livros livro = new Livros();
-		livro.setId_livro(1);
-		livro.setNome("Game of Thrones");
-		livro.setIsbn(654);
-		livro.setPreco(59);
-		livro.setId_autor(2);
-		livro.setId_editora(1);
+		// Livros livro = new Livros();
+		// livro.setId_livro(1);
+		// livro.setNome("Game of Thrones");
+		// livro.setIsbn(654);
+		// livro.setPreco(59);
+		// livro.setId_autor(2);
+		// livro.setId_editora(1);
 		
-		livrosDAO.update(livro);
+		// livrosDAO.update(livro);
 		
 		// livrosDAO.removeById(2);
 		

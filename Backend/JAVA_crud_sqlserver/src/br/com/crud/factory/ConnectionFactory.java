@@ -11,11 +11,11 @@ public class ConnectionFactory {
 			
 			// Cria a conex�o com o banco de dados ----------------------- SEM senha
 			// Connection connection = DriverManager.getConnection(
-				// "jdbc:sqlserver://LAPTOP-1CT7LGRM;integratedSecurity=true;databaseName=crud;");
+				// "jdbc:sqlserver://localhost;integratedSecurity=true;databaseName=Bookstore;");
 			
 			// Cria a conex�o com o banco de dados ----------------------- COM senha
 			// Connection connection = DriverManager.getConnection(
-					// "jdbc:sqlserver://LAPTOP-1CT7LGRM;databaseName=crud;", "usuario", "senha");
+					// "jdbc:sqlserver://localhost;databaseName=Bookstore;", "usuario", "senha");
 			
 			// Cria a conex�o com o banco de dados ----------------------- COM senha pelo Azure
 			Connection connection = DriverManager.getConnection(
@@ -28,7 +28,7 @@ public class ConnectionFactory {
 			Connection con = createConnectionSQLServer();
 			// Testa se a conex�o � nula
 			if (con != null) {
-				System.out.println("Conex�o obtida com sucesso! " + con);
+				System.out.println("Conexão obtida com sucesso! " + con);
 				con.close();
 			}
 		}

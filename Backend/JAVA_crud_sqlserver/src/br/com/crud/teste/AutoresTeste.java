@@ -9,11 +9,11 @@ public class AutoresTeste {
 		AutoresDAO autoresDAO = new AutoresDAO();
 		
 		// ------------ Cria um contato e salva no banco
-		Autores autor = new Autores();
-		autor.setNome("Jo„o");
-		autor.setSobrenome("Lino");
+		// Autores autor = new Autores();
+		// autor.setNome("Jo√£o");
+		// autor.setSobrenome("Lino");
 		
-		autoresDAO.save(autor);
+		// autoresDAO.save(autor);
 		
 		// ------------ Atualiza o contato com id = 1 com os dados do objeto contato1
 		/* Autores autor1 = new Autores();
@@ -27,8 +27,8 @@ public class AutoresTeste {
 		// autoresDAO.removeById(1);
 		
 		// ------------ Lista todos os contatos do banco de dados
-		// for (Autores a : autoresDAO.getAutores()) {
-			// System.out.println("Nome: " + a.getNome() + " " + a.getSobrenome());
-		// }
+		for (Autores a : autoresDAO.getAutores()) {
+			System.out.println("Nome: " + a.getNome() + " " + a.getSobrenome());
+		}
 	}
 }

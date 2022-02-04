@@ -17,7 +17,5 @@ public class Editoras {
 	public void setNome(String nome) {
 		Nome = nome;
 	}
-	
-	
 
 }
