@@ -1,4 +1,4 @@
-create database Bookstore2;
+CREATE DATABASE Bookstore;
 
 CREATE TABLE Autores ( 
  Id_autor INT PRIMARY KEY IDENTITY(1, 1),  
